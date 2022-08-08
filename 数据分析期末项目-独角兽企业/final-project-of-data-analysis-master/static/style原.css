@@ -1,0 +1,50 @@
+body 
+{
+    background: hsl(260, 24%, 7%);
+    padding: 50px;
+}
+
+a, h1, h2 {
+    color: #f0f0f5;
+}
+
+h1 {
+    border-bottom: 2px solid rgb(19, 18, 18);
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+table.dataframe, .dataframe th, .dataframe td {
+    border: none;
+    border-bottom: 1px solid #fff1f1;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 0.9em;
+    color: hsl(0, 0%, 94%);
+}
+
+.male th {
+    background-color: #add8e6;
+    color: white;
+}
+
+.female th {
+    background-color: #77dd77;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: hsl(259, 27%, 15%);
+}
+
+tr:nth-child(even) {
+    background-color: hsl(258, 28%, 20%);
+}
+
+tr:hover {
+    background-color: #585858;
+}

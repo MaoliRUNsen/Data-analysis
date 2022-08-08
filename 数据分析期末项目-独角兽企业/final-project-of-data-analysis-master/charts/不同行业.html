@@ -1,0 +1,1377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" >
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" >
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+
+    <title>Amaze - Bootstrap Admin Dashboard Template</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport' >
+    <meta name="viewport" content="width=device-width" >
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" >
+
+    <!--  Paper Dashboard CSS    -->
+    <link href="../assets/css/amaze.css" rel="stylesheet" >
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../assets/css/demo.css" rel="stylesheet" >
+
+    <!--     Fonts and icons     -->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/font-muli.css" rel='stylesheet' type='text/css'>
+    <link href="../assets/css/themify-icons.css" rel="stylesheet">
+
+    <link href="../assets/vendors/sweetalert/css/sweetalert2.min.css" rel="Stylesheet" >
+</head>
+
+<body>
+    <div class="wrapper">
+		<div class="sidebar" data-background-color="brown" data-active-color="danger">
+	    <!--
+			Tip 1: you can change the color of the sidebar's background using: data-background-color="white | brown"
+			Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+		-->
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    期末项目
+                </a>
+            </div>
+            <div class="logo logo-mini">
+                <a href="#" class="simple-text">
+                    A
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+				<ul class="nav">
+                    <li>
+                        <a href="../index.html">
+                            <i class="ti-panel"></i>
+                            <p>项目首页</p>
+                        </a>
+                    </li>
+					<li>
+						<a href="https://gitee.com/fang_se_bin/final-project-of-data-analysis">
+							<i class="ti-widget"></i>
+							<p>项目文档</p>
+						</a>
+					</li>
+					<li class="active">
+						<a data-toggle="collapse" href="#charts" class="collapsed" aria-expanded="false">
+							<i class="ti-bar-chart-alt"></i>
+							<p>可视化图形分析
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="charts" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li class="active">
+									<a href="../charts/不同行业.html">不同行业</a>
+								</li>
+								<li>
+									<a href="../charts/不同湾区.html">不同湾区</a>
+								</li>
+                                <li>
+									<a href="../charts/不同投资机构.html">不同投资机构</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<!-- <li>
+						<a data-toggle="collapse" href="#ui-elements" class="collapsed" aria-expanded="false">
+							<i class="ti-package"></i>
+							<p>UI Elements
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="ui-elements" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li><a href="../ui/accordions.html">Accordions</a></li>
+								<li><a href="../ui/alerts.html">Alerts</a></li>
+								<li><a href="../ui/buttons.html">Buttons</a></li>
+								<li><a href="../ui/grid.html">Grid System</a></li>
+								<li><a href="../ui/icons.html">Icons</a></li>
+								<li><a href="../ui/modals.html">Modals</a></li>
+								<li><a href="../ui/notifications.html">Notifications</a></li>
+								<li><a href="../ui/tabs.html">Tabs</a></li>
+								<li><a href="../ui/typography.html">Typography</a></li>
+							</ul>
+						</div>
+					</li> -->
+					<!-- <li>
+						<a data-toggle="collapse" href="#forms" class="collapsed" aria-expanded="false">
+							<i class="ti-clipboard"></i>
+							<p>Forms
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="forms" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li><a href="../forms/basic-elements.html">Basic Elements</a></li>
+								<li><a href="../forms/advanced-elements.html">Advanced Elements</a></li>
+								<li><a href="../forms/form-validation.html">Form Validation</a></li>
+								<li><a href="../forms/form-wizard.html">Form Wizard</a></li>
+								<li><a href="../forms/sample-forms.html">Sample Forms</a></li>
+							</ul>
+						</div>
+					</li> -->
+                    <li class="active">
+						<a data-toggle="collapse" href="#tables" class="collapsed" aria-expanded="false">
+							<i class="ti-view-list-alt"></i>
+							<p>数据结果表格
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="tables" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li class="active"><a href="../tables/行业.html">不同行业</a></li>
+								<li><a href="../tables/湾区.html">不同湾区</a></li>
+                <li><a href="../tables/投资机构.html">不同投资机构</a></li>
+                <li><a href="../tables/独角兽企业.html">独角兽企业</a></li>
+                <li><a href="../tables/不同城市.html">不同城市</a></li>
+                <li><a href="../tables/不同个人.html">不同个人</a></li>
+							</ul>
+						</div>
+					</li>
+					<!-- <li>
+						<a data-toggle="collapse" href="#pages" class="collapsed" aria-expanded="false">
+							<i class="ti-gift"></i>
+							<p>Pages
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="pages" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li><a href="../sample-pages/template.html">Template</a></li>
+								<li><a href="../sample-pages/user-profile.html">User Profile</a></li>
+								<li><a href="../sample-pages/login.html">Login</a></li>
+								<li><a href="../sample-pages/signup.html">Sign Up</a></li>
+								<li><a href="../sample-pages/pricing-table.html">Pricing Table</a></li>
+								<li><a href="../sample-pages/invoice.html">Invoice</a></li>
+								<li><a href="../sample-pages/help-faqs.html">Help & FAQs</a></li>
+								<li><a href="../sample-pages/timeline.html">Timeline</a></li>
+								<li><a href="../sample-pages/404.html">404</a></li>
+								<li><a href="../sample-pages/500.html">500</a></li>
+							</ul>
+						</div>
+					</li> -->
+					<li>
+						<a href="../calendar/calendar.html">
+							<i class="ti-calendar"></i>
+							<p>项目数据源
+								<b class="caret"></b>
+							</p>
+						</a>
+					</li>
+					<!-- <li>
+						<a href="../docs/documentation.html">
+							<i class="ti-help"></i>
+							<p>Documentation</p>
+						</a>
+					</li> -->
+				</ul>
+
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-minimize">
+                        <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+							<i class="ti-arrow-left"></i>
+                        </button>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"> ChartJS </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <span class="notification">6</span>
+                                    <p class="hidden-lg hidden-md">
+                                        Notifications
+                                        <b class="caret"></b>
+                                    </p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">You have 5 new messages</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You're now friend with Mike</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wish Mary on her birthday!</a>
+                                    </li>                                    <li>
+                                        <a href="#">5 warnings in Server Console</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jane completed 'Induction Training'</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">'Prepare Marketing Report' is overdue</a>
+                                    </li>
+                                </ul>
+                            </li>
+							<li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-layout-grid3-alt"></i>
+                                    <p class="hidden-lg hidden-md">Apps</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-user"></i>
+                                    <p class="hidden-lg hidden-md">Profile</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-settings"></i>
+                                    <p class="hidden-lg hidden-md">Settings</p>
+                                </a>
+                            </li>
+                            <li class="separator hidden-lg hidden-md"></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="header text-center">
+                        <h3 class="title">不同行业</h3>
+                        <p class="category">独角兽企业的不同行业
+                        </p>
+                    </div>
+                   
+<!-- 不同行业的总估值  -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                </div>
+                  
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="8b664cc41a0c4ac191ff6c96dc1bdecd" class="chart-container" style="width:1400px; height:600px;"></div>
+    <script>
+        var chart_8b664cc41a0c4ac191ff6c96dc1bdecd = echarts.init(
+            document.getElementById('8b664cc41a0c4ac191ff6c96dc1bdecd'), 'white', {renderer: 'canvas'});
+        var option_8b664cc41a0c4ac191ff6c96dc1bdecd = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u4e0d\u540c\u884c\u4e1a\u7684\u603b\u4f30\u503c",
+            "legendHoverLink": true,
+            "data": [
+                100,
+                140,
+                200,
+                360,
+                440,
+                460,
+                620,
+                720,
+                1190,
+                1250,
+                1340,
+                1400,
+                1460,
+                1810,
+                2060,
+                2090,
+                3910,
+                4220,
+                4740,
+                8230,
+                17960
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8
+            },
+            "markPoint": {
+                "symbolSize": 80,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "color": "#fff",
+                    "margin": 8
+                },
+                "data": [
+                    {
+                        "type": "average"
+                    },
+                    {
+                        "type": "max"
+                    },
+                    {
+                        "type": "min"
+                    }
+                ]
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u4e0d\u540c\u884c\u4e1a\u7684\u603b\u4f30\u503c"
+            ],
+            "selected": {
+                "\u4e0d\u540c\u884c\u4e1a\u7684\u603b\u4f30\u503c": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\u6e38\u620f",
+                "\u65b0\u80fd\u6e90",
+                "\u7f51\u7edc\u5b89\u5168",
+                "\u65b0\u96f6\u552e",
+                "\u751f\u547d\u79d1\u5b66",
+                "\u4e91\u8ba1\u7b97",
+                "\u6d88\u8d39\u54c1",
+                "\u5927\u6570\u636e",
+                "\u6559\u80b2\u79d1\u6280",
+                "\u533a\u5757\u94fe",
+                "\u623f\u5730\u4ea7\u79d1\u6280",
+                "\u673a\u5668\u4eba",
+                "\u8f6f\u4ef6\u4e0e\u670d\u52a1",
+                "\u65b0\u80fd\u6e90\u6c7d\u8f66",
+                "\u5065\u5eb7\u79d1\u6280",
+                "\u4eba\u5de5\u667a\u80fd",
+                "\u7269\u6d41",
+                "\u7535\u5b50\u5546\u52a1",
+                "\u5171\u4eab\u7ecf\u6d4e",
+                "\u5a92\u4f53\u548c\u5a31\u4e50",
+                "\u91d1\u878d\u79d1\u6280"
+            ]
+        }
+    ],
+    "title": [
+        {
+            "text": "\u4e0d\u540c\u884c\u4e1a\u7684\u603b\u4f30\u503c(\u4ebf\u4eba\u6c11\u5e01)",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_8b664cc41a0c4ac191ff6c96dc1bdecd.setOption(option_8b664cc41a0c4ac191ff6c96dc1bdecd);
+    </script>
+</body>
+</html>
+
+                    </div>
+                    </div>
+                    </div>
+
+
+ <!-- 不同行业公司数量图 -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                </div>
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Awesome-pyecharts</title>
+                                <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+                    
+                    </head>
+                    <body>
+                        <div id="5a190d00151041e098a872e2c2482735" class="chart-container" style="width:1200px; height:500px;"></div>
+                        <script>
+                            var chart_5a190d00151041e098a872e2c2482735 = echarts.init(
+                                document.getElementById('5a190d00151041e098a872e2c2482735'), 'white', {renderer: 'canvas'});
+                            var option_5a190d00151041e098a872e2c2482735 = {
+                        "animation": true,
+                        "animationThreshold": 2000,
+                        "animationDuration": 1000,
+                        "animationEasing": "cubicOut",
+                        "animationDelay": 0,
+                        "animationDurationUpdate": 300,
+                        "animationEasingUpdate": "cubicOut",
+                        "animationDelayUpdate": 0,
+                        "color": [
+                            "#c23531",
+                            "#2f4554",
+                            "#61a0a8",
+                            "#d48265",
+                            "#749f83",
+                            "#ca8622",
+                            "#bda29a",
+                            "#6e7074",
+                            "#546570",
+                            "#c4ccd3",
+                            "#f05b72",
+                            "#ef5b9c",
+                            "#f47920",
+                            "#905a3d",
+                            "#fab27b",
+                            "#2a5caa",
+                            "#444693",
+                            "#726930",
+                            "#b2d235",
+                            "#6d8346",
+                            "#ac6767",
+                            "#1d953f",
+                            "#6950a1",
+                            "#918597"
+                        ],
+                        "series": [
+                            {
+                                "type": "bar",
+                                "name": "\u4e0d\u540c\u884c\u4e1a\u516c\u53f8\u6570\u91cf",
+                                "legendHoverLink": true,
+                                "data": [
+                                    33,
+                                    22,
+                                    17,
+                                    16,
+                                    15,
+                                    15,
+                                    13,
+                                    12,
+                                    11,
+                                    9,
+                                    8,
+                                    7,
+                                    5,
+                                    4,
+                                    4,
+                                    4,
+                                    4,
+                                    3,
+                                    2,
+                                    1,
+                                    1
+                                ],
+                                "showBackground": false,
+                                "barMinHeight": 0,
+                                "barCategoryGap": "20%",
+                                "barGap": "30%",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "position": "top",
+                                    "margin": 8
+                                }
+                            }
+                        ],
+                        "legend": [
+                            {
+                                "data": [
+                                    "\u4e0d\u540c\u884c\u4e1a\u516c\u53f8\u6570\u91cf"
+                                ],
+                                "selected": {
+                                    "\u4e0d\u540c\u884c\u4e1a\u516c\u53f8\u6570\u91cf": true
+                                },
+                                "show": true,
+                                "padding": 5,
+                                "itemGap": 10,
+                                "itemWidth": 25,
+                                "itemHeight": 14
+                            }
+                        ],
+                        "tooltip": {
+                            "show": true,
+                            "trigger": "item",
+                            "triggerOn": "mousemove|click",
+                            "axisPointer": {
+                                "type": "line"
+                            },
+                            "showContent": true,
+                            "alwaysShowContent": false,
+                            "showDelay": 0,
+                            "hideDelay": 100,
+                            "textStyle": {
+                                "fontSize": 14
+                            },
+                            "borderWidth": 0,
+                            "padding": 5
+                        },
+                        "xAxis": [
+                            {
+                                "show": true,
+                                "scale": false,
+                                "nameLocation": "end",
+                                "nameGap": 15,
+                                "gridIndex": 0,
+                                "inverse": false,
+                                "offset": 0,
+                                "splitNumber": 5,
+                                "minInterval": 0,
+                                "splitLine": {
+                                    "show": false,
+                                    "lineStyle": {
+                                        "show": true,
+                                        "width": 1,
+                                        "opacity": 1,
+                                        "curveness": 0,
+                                        "type": "solid"
+                                    }
+                                },
+                                "data": [
+                                    "\u7535\u5b50\u5546\u52a1",
+                                    "\u91d1\u878d\u79d1\u6280",
+                                    "\u5a92\u4f53\u548c\u5a31\u4e50",
+                                    "\u7269\u6d41",
+                                    "\u4eba\u5de5\u667a\u80fd",
+                                    "\u8f6f\u4ef6\u4e0e\u670d\u52a1",
+                                    "\u5065\u5eb7\u79d1\u6280",
+                                    "\u65b0\u80fd\u6e90\u6c7d\u8f66",
+                                    "\u6559\u80b2\u79d1\u6280",
+                                    "\u5927\u6570\u636e",
+                                    "\u5171\u4eab\u7ecf\u6d4e",
+                                    "\u623f\u5730\u4ea7\u79d1\u6280",
+                                    "\u4e91\u8ba1\u7b97",
+                                    "\u65b0\u96f6\u552e",
+                                    "\u6d88\u8d39\u54c1",
+                                    "\u751f\u547d\u79d1\u5b66",
+                                    "\u533a\u5757\u94fe",
+                                    "\u673a\u5668\u4eba",
+                                    "\u65b0\u80fd\u6e90",
+                                    "\u6e38\u620f",
+                                    "\u7f51\u7edc\u5b89\u5168"
+                                ]
+                            }
+                        ],
+                        "yAxis": [
+                            {
+                                "show": true,
+                                "scale": false,
+                                "nameLocation": "end",
+                                "nameGap": 15,
+                                "gridIndex": 0,
+                                "inverse": false,
+                                "offset": 0,
+                                "splitNumber": 5,
+                                "minInterval": 0,
+                                "splitLine": {
+                                    "show": false,
+                                    "lineStyle": {
+                                        "show": true,
+                                        "width": 1,
+                                        "opacity": 1,
+                                        "curveness": 0,
+                                        "type": "solid"
+                                    }
+                                }
+                            }
+                        ],
+                        "title": [
+                            {
+                                "text": "\u4e0d\u540c\u884c\u4e1a\u516c\u53f8\u6570\u91cf\u56fe",
+                                "padding": 5,
+                                "itemGap": 10
+                            }
+                        ],
+                        "dataZoom": {
+                            "show": true,
+                            "type": "slider",
+                            "realtime": true,
+                            "start": 20,
+                            "end": 80,
+                            "orient": "horizontal",
+                            "zoomLock": false,
+                            "filterMode": "filter"
+                        }
+                    };
+                            chart_5a190d00151041e098a872e2c2482735.setOption(option_5a190d00151041e098a872e2c2482735);
+                        </script>
+                    </body>
+                    </html>
+                    </div>
+                    </div>
+                    </div>
+<!-- 不同行业不同年份公司成立数量图 -->
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card" style="min-height: 360px">
+                                <div class="header">
+                                    <h5 class="title"><b>不同年份不同行业公司成立数量</b></h4>
+
+
+                                    <!DOCTYPE html>
+                                    <html>
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <title>Awesome-pyecharts</title>
+                                                <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+                                    
+                                    </head>
+                                    <body>
+                                        <div id="52462d8c589c428a91f406b5b313290d" class="chart-container" style="width:700px; height:500px;"></div>
+                                        <script>
+                                            var chart_52462d8c589c428a91f406b5b313290d = echarts.init(
+                                                document.getElementById('52462d8c589c428a91f406b5b313290d'), 'white', {renderer: 'canvas'});
+                                            var option_52462d8c589c428a91f406b5b313290d = {
+                                        "baseOption": {
+                                            "series": [
+                                                {
+                                                    "type": "pie",
+                                                    "name": 2019,
+                                                    "clockwise": true,
+                                                    "data": [
+                                                        {
+                                                            "name": "\u5065\u5eb7\u79d1\u6280",
+                                                            "value": 1
+                                                        }
+                                                    ],
+                                                    "radius": [
+                                                        "0%",
+                                                        "75%"
+                                                    ],
+                                                    "center": [
+                                                        "50%",
+                                                        "50%"
+                                                    ],
+                                                    "label": {
+                                                        "show": true,
+                                                        "position": "top",
+                                                        "margin": 8
+                                                    }
+                                                }
+                                            ],
+                                            "timeline": {
+                                                "axisType": "category",
+                                                "orient": "horizontal",
+                                                "autoPlay": false,
+                                                "controlPosition": "left",
+                                                "loop": true,
+                                                "rewind": false,
+                                                "show": true,
+                                                "inverse": false,
+                                                "bottom": "-5px",
+                                                "data": [
+                                                    2015,
+                                                    2016,
+                                                    2017,
+                                                    2018,
+                                                    2019
+                                                ]
+                                            }
+                                        },
+                                        "options": [
+                                            {
+                                                "legend": [
+                                                    {
+                                                        "data": [
+                                                            "\u623f\u5730\u4ea7\u79d1\u6280",
+                                                            "\u5927\u6570\u636e",
+                                                            "\u7f51\u7edc\u5b89\u5168",
+                                                            "\u7535\u5b50\u5546\u52a1",
+                                                            "\u5a92\u4f53\u548c\u5a31\u4e50",
+                                                            "\u7269\u6d41",
+                                                            "\u6e38\u620f"
+                                                        ],
+                                                        "selected": {}
+                                                    }
+                                                ],
+                                                "series": [
+                                                    {
+                                                        "type": "pie",
+                                                        "name": 2015,
+                                                        "clockwise": true,
+                                                        "data": [
+                                                            {
+                                                                "name": "\u623f\u5730\u4ea7\u79d1\u6280",
+                                                                "value": 1
+                                                            },
+                                                            {
+                                                                "name": "\u5927\u6570\u636e",
+                                                                "value": 2
+                                                            },
+                                                            {
+                                                                "name": "\u7f51\u7edc\u5b89\u5168",
+                                                                "value": 1
+                                                            },
+                                                            {
+                                                                "name": "\u7535\u5b50\u5546\u52a1",
+                                                                "value": 2
+                                                            },
+                                                            {
+                                                                "name": "\u5a92\u4f53\u548c\u5a31\u4e50",
+                                                                "value": 2
+                                                            },
+                                                            {
+                                                                "name": "\u7269\u6d41",
+                                                                "value": 2
+                                                            },
+                                                            {
+                                                                "name": "\u6e38\u620f",
+                                                                "value": 1
+                                                            }
+                                                        ],
+                                                        "radius": [
+                                                            "0%",
+                                                            "75%"
+                                                        ],
+                                                        "center": [
+                                                            "50%",
+                                                            "50%"
+                                                        ],
+                                                        "label": {
+                                                            "show": true,
+                                                            "position": "top",
+                                                            "margin": 8
+                                                        }
+                                                    }
+                                                ],
+                                                "tooltip": {
+                                                    "show": true,
+                                                    "trigger": "item",
+                                                    "triggerOn": "mousemove|click",
+                                                    "axisPointer": {
+                                                        "type": "line"
+                                                    },
+                                                    "showContent": true,
+                                                    "alwaysShowContent": false,
+                                                    "showDelay": 0,
+                                                    "hideDelay": 100,
+                                                    "textStyle": {
+                                                        "fontSize": 14
+                                                    },
+                                                    "borderWidth": 0,
+                                                    "padding": 5
+                                                },
+                                                "color": [
+                                                    "#c23531",
+                                                    "#2f4554",
+                                                    "#61a0a8",
+                                                    "#d48265",
+                                                    "#749f83",
+                                                    "#ca8622",
+                                                    "#bda29a",
+                                                    "#6e7074",
+                                                    "#546570",
+                                                    "#c4ccd3",
+                                                    "#f05b72",
+                                                    "#ef5b9c",
+                                                    "#f47920",
+                                                    "#905a3d",
+                                                    "#fab27b",
+                                                    "#2a5caa",
+                                                    "#444693",
+                                                    "#726930",
+                                                    "#b2d235",
+                                                    "#6d8346",
+                                                    "#ac6767",
+                                                    "#1d953f",
+                                                    "#6950a1",
+                                                    "#918597"
+                                                ]
+                                            },
+                                            {
+                                                "legend": [
+                                                    {
+                                                        "data": [
+                                                            "\u5171\u4eab\u7ecf\u6d4e",
+                                                            "\u5065\u5eb7\u79d1\u6280",
+                                                            "\u91d1\u878d\u79d1\u6280",
+                                                            "\u4eba\u5de5\u667a\u80fd"
+                                                        ],
+                                                        "selected": {}
+                                                    }
+                                                ],
+                                                "series": [
+                                                    {
+                                                        "type": "pie",
+                                                        "name": 2016,
+                                                        "clockwise": true,
+                                                        "data": [
+                                                            {
+                                                                "name": "\u5171\u4eab\u7ecf\u6d4e",
+                                                                "value": 2
+                                                            },
+                                                            {
+                                                                "name": "\u5065\u5eb7\u79d1\u6280",
+                                                                "value": 1
+                                                            },
+                                                            {
+                                                                "name": "\u91d1\u878d\u79d1\u6280",
+                                                                "value": 3
+                                                            },
+                                                            {
+                                                                "name": "\u4eba\u5de5\u667a\u80fd",
+                                                                "value": 2
+                                                            }
+                                                        ],
+                                                        "radius": [
+                                                            "0%",
+                                                            "75%"
+                                                        ],
+                                                        "center": [
+                                                            "50%",
+                                                            "50%"
+                                                        ],
+                                                        "label": {
+                                                            "show": true,
+                                                            "position": "top",
+                                                            "margin": 8
+                                                        }
+                                                    }
+                                                ],
+                                                "tooltip": {
+                                                    "show": true,
+                                                    "trigger": "item",
+                                                    "triggerOn": "mousemove|click",
+                                                    "axisPointer": {
+                                                        "type": "line"
+                                                    },
+                                                    "showContent": true,
+                                                    "alwaysShowContent": false,
+                                                    "showDelay": 0,
+                                                    "hideDelay": 100,
+                                                    "textStyle": {
+                                                        "fontSize": 14
+                                                    },
+                                                    "borderWidth": 0,
+                                                    "padding": 5
+                                                },
+                                                "color": [
+                                                    "#c23531",
+                                                    "#2f4554",
+                                                    "#61a0a8",
+                                                    "#d48265",
+                                                    "#749f83",
+                                                    "#ca8622",
+                                                    "#bda29a",
+                                                    "#6e7074",
+                                                    "#546570",
+                                                    "#c4ccd3",
+                                                    "#f05b72",
+                                                    "#ef5b9c",
+                                                    "#f47920",
+                                                    "#905a3d",
+                                                    "#fab27b",
+                                                    "#2a5caa",
+                                                    "#444693",
+                                                    "#726930",
+                                                    "#b2d235",
+                                                    "#6d8346",
+                                                    "#ac6767",
+                                                    "#1d953f",
+                                                    "#6950a1",
+                                                    "#918597"
+                                                ]
+                                            },
+                                            {
+                                                "legend": [
+                                                    {
+                                                        "data": [
+                                                            "\u65b0\u80fd\u6e90\u6c7d\u8f66",
+                                                            "\u533a\u5757\u94fe",
+                                                            "\u65b0\u96f6\u552e"
+                                                        ],
+                                                        "selected": {}
+                                                    }
+                                                ],
+                                                "series": [
+                                                    {
+                                                        "type": "pie",
+                                                        "name": 2017,
+                                                        "clockwise": true,
+                                                        "data": [
+                                                            {
+                                                                "name": "\u65b0\u80fd\u6e90\u6c7d\u8f66",
+                                                                "value": 6
+                                                            },
+                                                            {
+                                                                "name": "\u533a\u5757\u94fe",
+                                                                "value": 1
+                                                            },
+                                                            {
+                                                                "name": "\u65b0\u96f6\u552e",
+                                                                "value": 1
+                                                            }
+                                                        ],
+                                                        "radius": [
+                                                            "0%",
+                                                            "75%"
+                                                        ],
+                                                        "center": [
+                                                            "50%",
+                                                            "50%"
+                                                        ],
+                                                        "label": {
+                                                            "show": true,
+                                                            "position": "top",
+                                                            "margin": 8
+                                                        }
+                                                    }
+                                                ],
+                                                "tooltip": {
+                                                    "show": true,
+                                                    "trigger": "item",
+                                                    "triggerOn": "mousemove|click",
+                                                    "axisPointer": {
+                                                        "type": "line"
+                                                    },
+                                                    "showContent": true,
+                                                    "alwaysShowContent": false,
+                                                    "showDelay": 0,
+                                                    "hideDelay": 100,
+                                                    "textStyle": {
+                                                        "fontSize": 14
+                                                    },
+                                                    "borderWidth": 0,
+                                                    "padding": 5
+                                                },
+                                                "color": [
+                                                    "#c23531",
+                                                    "#2f4554",
+                                                    "#61a0a8",
+                                                    "#d48265",
+                                                    "#749f83",
+                                                    "#ca8622",
+                                                    "#bda29a",
+                                                    "#6e7074",
+                                                    "#546570",
+                                                    "#c4ccd3",
+                                                    "#f05b72",
+                                                    "#ef5b9c",
+                                                    "#f47920",
+                                                    "#905a3d",
+                                                    "#fab27b",
+                                                    "#2a5caa",
+                                                    "#444693",
+                                                    "#726930",
+                                                    "#b2d235",
+                                                    "#6d8346",
+                                                    "#ac6767",
+                                                    "#1d953f",
+                                                    "#6950a1",
+                                                    "#918597"
+                                                ]
+                                            },
+                                            {
+                                                "legend": [
+                                                    {
+                                                        "data": [
+                                                            "\u623f\u5730\u4ea7\u79d1\u6280",
+                                                            "\u65b0\u96f6\u552e",
+                                                            "\u6d88\u8d39\u54c1",
+                                                            "\u5065\u5eb7\u79d1\u6280",
+                                                            "\u91d1\u878d\u79d1\u6280"
+                                                        ],
+                                                        "selected": {}
+                                                    }
+                                                ],
+                                                "series": [
+                                                    {
+                                                        "type": "pie",
+                                                        "name": 2018,
+                                                        "clockwise": true,
+                                                        "data": [
+                                                            {
+                                                                "name": "\u623f\u5730\u4ea7\u79d1\u6280",
+                                                                "value": 1
+                                                            },
+                                                            {
+                                                                "name": "\u65b0\u96f6\u552e",
+                                                                "value": 1
+                                                            },
+                                                            {
+                                                                "name": "\u6d88\u8d39\u54c1",
+                                                                "value": 1
+                                                            },
+                                                            {
+                                                                "name": "\u5065\u5eb7\u79d1\u6280",
+                                                                "value": 1
+                                                            },
+                                                            {
+                                                                "name": "\u91d1\u878d\u79d1\u6280",
+                                                                "value": 1
+                                                            }
+                                                        ],
+                                                        "radius": [
+                                                            "0%",
+                                                            "75%"
+                                                        ],
+                                                        "center": [
+                                                            "50%",
+                                                            "50%"
+                                                        ],
+                                                        "label": {
+                                                            "show": true,
+                                                            "position": "top",
+                                                            "margin": 8
+                                                        }
+                                                    }
+                                                ],
+                                                "tooltip": {
+                                                    "show": true,
+                                                    "trigger": "item",
+                                                    "triggerOn": "mousemove|click",
+                                                    "axisPointer": {
+                                                        "type": "line"
+                                                    },
+                                                    "showContent": true,
+                                                    "alwaysShowContent": false,
+                                                    "showDelay": 0,
+                                                    "hideDelay": 100,
+                                                    "textStyle": {
+                                                        "fontSize": 14
+                                                    },
+                                                    "borderWidth": 0,
+                                                    "padding": 5
+                                                },
+                                                "color": [
+                                                    "#c23531",
+                                                    "#2f4554",
+                                                    "#61a0a8",
+                                                    "#d48265",
+                                                    "#749f83",
+                                                    "#ca8622",
+                                                    "#bda29a",
+                                                    "#6e7074",
+                                                    "#546570",
+                                                    "#c4ccd3",
+                                                    "#f05b72",
+                                                    "#ef5b9c",
+                                                    "#f47920",
+                                                    "#905a3d",
+                                                    "#fab27b",
+                                                    "#2a5caa",
+                                                    "#444693",
+                                                    "#726930",
+                                                    "#b2d235",
+                                                    "#6d8346",
+                                                    "#ac6767",
+                                                    "#1d953f",
+                                                    "#6950a1",
+                                                    "#918597"
+                                                ]
+                                            },
+                                            {
+                                                "legend": [
+                                                    {
+                                                        "data": [
+                                                            "\u5065\u5eb7\u79d1\u6280"
+                                                        ],
+                                                        "selected": {}
+                                                    }
+                                                ],
+                                                "series": [
+                                                    {
+                                                        "type": "pie",
+                                                        "name": 2019,
+                                                        "clockwise": true,
+                                                        "data": [
+                                                            {
+                                                                "name": "\u5065\u5eb7\u79d1\u6280",
+                                                                "value": 1
+                                                            }
+                                                        ],
+                                                        "radius": [
+                                                            "0%",
+                                                            "75%"
+                                                        ],
+                                                        "center": [
+                                                            "50%",
+                                                            "50%"
+                                                        ],
+                                                        "label": {
+                                                            "show": true,
+                                                            "position": "top",
+                                                            "margin": 8
+                                                        }
+                                                    }
+                                                ],
+                                                "tooltip": {
+                                                    "show": true,
+                                                    "trigger": "item",
+                                                    "triggerOn": "mousemove|click",
+                                                    "axisPointer": {
+                                                        "type": "line"
+                                                    },
+                                                    "showContent": true,
+                                                    "alwaysShowContent": false,
+                                                    "showDelay": 0,
+                                                    "hideDelay": 100,
+                                                    "textStyle": {
+                                                        "fontSize": 14
+                                                    },
+                                                    "borderWidth": 0,
+                                                    "padding": 5
+                                                },
+                                                "color": [
+                                                    "#c23531",
+                                                    "#2f4554",
+                                                    "#61a0a8",
+                                                    "#d48265",
+                                                    "#749f83",
+                                                    "#ca8622",
+                                                    "#bda29a",
+                                                    "#6e7074",
+                                                    "#546570",
+                                                    "#c4ccd3",
+                                                    "#f05b72",
+                                                    "#ef5b9c",
+                                                    "#f47920",
+                                                    "#905a3d",
+                                                    "#fab27b",
+                                                    "#2a5caa",
+                                                    "#444693",
+                                                    "#726930",
+                                                    "#b2d235",
+                                                    "#6d8346",
+                                                    "#ac6767",
+                                                    "#1d953f",
+                                                    "#6950a1",
+                                                    "#918597"
+                                                ]
+                                            }
+                                        ]
+                                    };
+                                            chart_52462d8c589c428a91f406b5b313290d.setOption(option_52462d8c589c428a91f406b5b313290d);
+                                        </script>
+                                    </body>
+                                    </html>
+                                    
+
+                                
+                                </div>
+                            </div>
+                            </div>
+
+                        <div class="col-md-5">
+                            <div class="card" style="min-height: 500px">
+                            	<div class="header">
+                                    <h4 class="title"><b>图表解读</b></h4>
+                                </div>
+
+                                <div class="content">
+                                    <div class="chart-edge">
+                                        <div id="line-chart" class="demo-placeholder"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+                    
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="http://www.17sucai.com/">Amaze Admin</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+<!--   Core JS Files   -->
+<script src="../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/vendors/material.min.js" type="text/javascript"></script>
+<script src="../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<!-- Forms Validations Plugin -->
+<script src="../assets/vendors/jquery.validate.min.js"></script>
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+<script src="../assets/vendors/moment.min.js"></script>
+<!--  Charts Plugin -->
+<script src="../assets/vendors/charts/chartjs/Chart.min.js" type="text/javascript"></script>
+<!--  Plugin for the Wizard -->
+<script src="../assets/vendors/jquery.bootstrap-wizard.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/vendors/bootstrap-notify.js"></script>
+<!-- DateTimePicker Plugin -->
+<script src="../assets/vendors/bootstrap-datetimepicker.js"></script>
+<!-- Vector Map plugin -->
+<script src="../assets/vendors/jquery-jvectormap.js"></script>
+<!-- Sliders Plugin -->
+<script src="../assets/vendors/nouislider.min.js"></script>
+<!-- Select Plugin -->
+<script src="../assets/vendors/jquery.select-bootstrap.js"></script>
+<!--  DataTables.net Plugin    -->
+<script src="../assets/vendors/jquery.datatables.js"></script>
+<!-- Sweet Alert 2 plugin -->
+<script src="../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="../assets/vendors/jasny-bootstrap.min.js"></script>
+<!--  Full Calendar Plugin    -->
+<script src="../assets/vendors/fullcalendar.min.js"></script>
+<!-- TagsInput Plugin -->
+<script src="../assets/vendors/jquery.tagsinput.js"></script>
+<!-- Material Dashboard javascript methods -->
+<script src="../assets/js/amaze.js"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+
+<script src="../assets/js/charts/chartjs-charts.js"></script>
+</body>
+</html>

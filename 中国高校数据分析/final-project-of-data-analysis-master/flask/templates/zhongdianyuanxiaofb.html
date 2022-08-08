@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>重点院校分布情况</title>
+    <link rel="stylesheet" href="static/css/style2.css" />
+</head>
+<body>
+<h1>重点院校分布情况</h1>
+{{ tu|safe}}
+<div>
+<h2>985学校汇总表</h2>
+{{ data1|safe}}
+</div>
+<div>
+<h2>211学校汇总表</h2>
+{{ data2|safe}}
+</div>
+<div>
+<h2>双一流学校汇总表</h2>
+{{ data3|safe}}
+</div>
+</body>
+</html>

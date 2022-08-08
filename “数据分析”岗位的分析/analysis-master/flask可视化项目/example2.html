@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/purple-passion.js"></script>
+
+</head>
+<body>
+    <div id="5fac7c01bf724b2cb1dfe5656094e397" class="chart-container" style="width:1200px; height:800px;"></div>
+    <script>
+        var chart_5fac7c01bf724b2cb1dfe5656094e397 = echarts.init(
+            document.getElementById('5fac7c01bf724b2cb1dfe5656094e397'), 'purple-passion', {renderer: 'canvas'});
+        var option_5fac7c01bf724b2cb1dfe5656094e397 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Europe",
+                    "value": 34
+                },
+                {
+                    "name": "North America",
+                    "value": 30
+                },
+                {
+                    "name": "Asia",
+                    "value": 26
+                },
+                {
+                    "name": "Oceania",
+                    "value": 8
+                },
+                {
+                    "name": "Latin America",
+                    "value": 2
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Europe",
+                "North America",
+                "Asia",
+                "Oceania",
+                "Latin America"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "2021\u5e74\u5404\u5927\u5730\u533atop100\u5927\u5b66\u6570\u91cf\u5206\u5e03",
+            "bottom": "left",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "fontSize": 20
+            }
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "20%",
+            "right": "10%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_5fac7c01bf724b2cb1dfe5656094e397.setOption(option_5fac7c01bf724b2cb1dfe5656094e397);
+    </script>
+</body>
+</html>

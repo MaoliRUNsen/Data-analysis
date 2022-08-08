@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" >
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" >
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+
+    <title>Amaze - Bootstrap Admin Dashboard Template</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport' >
+    <meta name="viewport" content="width=device-width" >
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" >
+
+    <!--  Paper Dashboard CSS    -->
+    <link href="../assets/css/amaze.css" rel="stylesheet" >
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../assets/css/demo.css" rel="stylesheet" >
+
+    <!--     Fonts and icons     -->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/font-muli.css" rel='stylesheet' type='text/css'>
+    <link href="../assets/css/themify-icons.css" rel="stylesheet">
+    <!--    JQuery UI     -->
+    <link href="../assets/vendors/jquery-ui-1.12.0/jquery-ui.css" rel="stylesheet">
+    <link href="../assets/vendors/sweetalert/css/sweetalert2.min.css" rel="Stylesheet" >
+</head>
+
+<body>
+    <div class="wrapper">
+		<div class="sidebar" data-background-color="brown" data-active-color="danger">
+	    <!--
+			Tip 1: you can change the color of the sidebar's background using: data-background-color="white | brown"
+			Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+		-->
+            <div class="logo">
+                <a href="#" class="simple-text">
+                  期末项目
+                </a>
+            </div>
+            <div class="logo logo-mini">
+                <a href="#" class="simple-text">
+                    A
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+				<ul class="nav">
+                    <li>
+                        <a href="../index.html">
+                            <i class="ti-panel"></i>
+                            <p>项目首页</p>
+                        </a>
+                    </li>
+					<li>
+						<a href="https://gitee.com/fang_se_bin/final-project-of-data-analysis">
+							<i class="ti-widget"></i>
+							<p>项目介绍</p>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#charts" class="collapsed" aria-expanded="false">
+							<i class="ti-bar-chart-alt"></i>
+							<p>数据可视化图形
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="charts" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li>
+									<a href="../charts/不同行业.html">不同行业</a>
+								</li>
+								<li>
+									<a href="../charts/不同湾区.html">不同湾区</a>
+								</li>
+                                <li>
+									<a href="../charts/投资机构.html">投资机构</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<!-- <li>
+						<a data-toggle="collapse" href="#ui-elements" class="collapsed" aria-expanded="false">
+							<i class="ti-package"></i>
+							<p>UI Elements
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="ui-elements" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li><a href="../ui/accordions.html">Accordions</a></li>
+								<li><a href="../ui/alerts.html">Alerts</a></li>
+								<li><a href="../ui/buttons.html">Buttons</a></li>
+								<li><a href="../ui/grid.html">Grid System</a></li>
+								<li><a href="../ui/icons.html">Icons</a></li>
+								<li><a href="../ui/modals.html">Modals</a></li>
+								<li><a href="../ui/notifications.html">Notifications</a></li>
+								<li><a href="../ui/tabs.html">Tabs</a></li>
+								<li><a href="../ui/typography.html">Typography</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#forms" class="collapsed" aria-expanded="false">
+							<i class="ti-clipboard"></i>
+							<p>Forms
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="forms" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li><a href="../forms/basic-elements.html">Basic Elements</a></li>
+								<li><a href="../forms/advanced-elements.html">Advanced Elements</a></li>
+								<li><a href="../forms/form-validation.html">Form Validation</a></li>
+								<li><a href="../forms/form-wizard.html">Form Wizard</a></li>
+								<li><a href="../forms/sample-forms.html">Sample Forms</a></li>
+							</ul>
+						</div>
+					</li> -->
+					<li class="active">
+						<a data-toggle="collapse" href="#tables" class="collapsed" aria-expanded="false">
+							<i class="ti-view-list-alt"></i>
+							<p>数据结果表格
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="tables" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li class="active"><a href="../tables/行业.html">不同行业</a></li>
+								<li><a href="../tables/湾区.html">不同湾区</a></li>
+                                <li><a href="../tables/投资机构.html">不同投资机构</a></li>
+                                <li><a href="../tables/独角兽企业.html">独角兽企业</a></li>
+                                <li><a href="../tables/不同城市.html">不同城市</a></li>
+                                <li><a href="../tables/不同个人.html">不同个人</a></li>
+							</ul>
+						</div>
+					</li>
+					<!-- <li>
+						<a data-toggle="collapse" href="#pages" class="collapsed" aria-expanded="false">
+							<i class="ti-gift"></i>
+							<p>Pages
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="pages" role="navigation" aria-expanded="false" style="height: 0px;">
+							<ul class="nav">
+								<li><a href="../sample-pages/template.html">Template</a></li>
+								<li><a href="../sample-pages/user-profile.html">User Profile</a></li>
+								<li><a href="../sample-pages/login.html">Login</a></li>
+								<li><a href="../sample-pages/signup.html">Sign Up</a></li>
+								<li><a href="../sample-pages/pricing-table.html">Pricing Table</a></li>
+								<li><a href="../sample-pages/invoice.html">Invoice</a></li>
+								<li><a href="../sample-pages/help-faqs.html">Help & FAQs</a></li>
+								<li><a href="../sample-pages/timeline.html">Timeline</a></li>
+								<li><a href="../sample-pages/404.html">404</a></li>
+								<li><a href="../sample-pages/500.html">500</a></li>
+							</ul>
+						</div>
+					</li> -->
+					<li>
+						<a href="../calendar/calendar.html">
+							<i class="ti-calendar"></i>
+							<p>项目数据源
+								<b class="caret"></b>
+							</p>
+						</a>
+					</li>
+					<!-- <li>
+						<a href="../docs/documentation.html">
+							<i class="ti-help"></i>
+							<p>Documentation</p>
+						</a>
+					</li> -->
+				</ul>
+
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-minimize">
+                        <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+							<i class="ti-arrow-left"></i>
+                        </button>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"> Table </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <span class="notification">6</span>
+                                    <p class="hidden-lg hidden-md">
+                                        Notifications
+                                        <b class="caret"></b>
+                                    </p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">You have 5 new messages</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You're now friend with Mike</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wish Mary on her birthday!</a>
+                                    </li>                                    <li>
+                                        <a href="#">5 warnings in Server Console</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jane completed 'Induction Training'</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">'Prepare Marketing Report' is overdue</a>
+                                    </li>
+                                </ul>
+                            </li>
+							<li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-layout-grid3-alt"></i>
+                                    <p class="hidden-lg hidden-md">Apps</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-user"></i>
+                                    <p class="hidden-lg hidden-md">Profile</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-settings"></i>
+                                    <p class="hidden-lg hidden-md">Settings</p>
+                                </a>
+                            </li>
+                            <li class="separator hidden-lg hidden-md"></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+         
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+
+                            <div class="card">
+                                <div class="content">
+                                    <link rel="stylesheet" href="../static/style.css">
+                                    <h4 class="title"><b><i>1.不同投资机构投资的企业数量及估值</b></i></h4>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class="text-primary">
+
+                                                    <table border="2" class="dataframe" width="1200" margin="middle">
+                                                      <thead>
+                                                        <tr style="text-align: right;">
+                                                            <th>序号</th>
+                                                            <th>投资机构</th>
+                                                            <th>企业数量</th>
+                                                            <th>估值（亿人民币）</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th>0</th>
+                                                            <td>红杉资本</td>
+                                                            <td>57</td>
+                                                            <td>30860</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>1</th>
+                                                            <td>腾讯</td>
+                                                            <td>33</td>
+                                                            <td>11890</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>2</th>
+                                                            <td>春华资本</td>
+                                                            <td>2</td>
+                                                            <td>11300</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>3</th>
+                                                            <td>纪源资本</td>
+                                                            <td>13</td>
+                                                            <td>11040</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>4</th>
+                                                            <td>中投海外</td>
+                                                            <td>1</td>
+                                                            <td>10000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>5</th>
+                                                            <td>启明创投</td>
+                                                            <td>19</td>
+                                                            <td>7510</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>6</th>
+                                                            <td>海纳亚洲</td>
+                                                            <td>10</td>
+                                                            <td>6230</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>7</th>
+                                                            <td>经纬中国</td>
+                                                            <td>14</td>
+                                                            <td>5810</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>8</th>
+                                                            <td>阿里巴巴</td>
+                                                            <td>15</td>
+                                                            <td>5520</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>9</th>
+                                                            <td>IDG</td>
+                                                            <td>26</td>
+                                                            <td>5450</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>10</th>
+                                                            <td>淡马锡</td>
+                                                            <td>4</td>
+                                                            <td>2970</td>
+                                                        
+					  </tr>
+					</tbody>
+				  </table>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="content">
+  <div class="container-fluid">
+      <div class="row">
+
+              <div class="card">
+                  <div class="content">
+                      <link rel="stylesheet" href="../static/style.css">
+                      <h4 class="title"><b><i>2.投资机构在近年对不同行业的投资情况</b></i></h4>
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class="text-primary">
+
+                                      <table border="2" class="dataframe" width="1200" margin="middle">
+                                          <thead>
+                                            <tr style="text-align: right;">
+                                              <th>序号</th>
+                                              <th>投资机构</th>
+                                              <th>投资年份</th>
+                                              <th>行业</th>
+                                              <th>估值（亿人民币）</th>
+                                              <th>企业数量</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th>0</th>
+                                              <td>中金资本</td>
+                                              <td>2019</td>
+                                              <td>健康科技</td>
+                                              <td>100</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>1</th>
+                                              <td>CPEChina Fund</td>
+                                              <td>2019</td>
+                                              <td>健康科技</td>
+                                              <td>100</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>2</th>
+                                              <td>霸菱亚洲</td>
+                                              <td>2019</td>
+                                              <td>健康科技</td>
+                                              <td>100</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>3</th>
+                                              <td>农银国际</td>
+                                              <td>2018</td>
+                                              <td>金融科技</td>
+                                              <td>200</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>4</th>
+                                              <td>IDG</td>
+                                              <td>2018</td>
+                                              <td>消费品</td>
+                                              <td>150</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>5</th>
+                                              <td>碧桂园创投</td>
+                                              <td>2018</td>
+                                              <td>健康科技</td>
+                                              <td>70</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>6</th>
+                                              <td>腾讯</td>
+                                              <td>2018</td>
+                                              <td>健康科技</td>
+                                              <td>70</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>7</th>
+                                              <td>腾讯</td>
+                                              <td>2018</td>
+                                              <td>房地产科技</td>
+                                              <td>600</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>8</th>
+                                              <td>TPG</td>
+                                              <td>2018</td>
+                                              <td>金融科技</td>
+                                              <td>200</td>
+                                              <td>1</td>
+                                            </tr>
+                                            <tr>
+                                              <th>9</th>
+                                              <td>源码资本</td>
+                                              <td>2018</td>
+                                              <td>消费品</td>
+                                              <td>150</td>
+                                              <td>1</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="content">
+  <div class="container-fluid">
+      <div class="row">
+
+              <div class="card">
+                  <div class="content">
+                      <link rel="stylesheet" href="../static/style.css">
+                      <h4 class="title"><b><i>3.投资机构在什么年份投资什么行业估值最高</b></i></h4>
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class="text-primary">
+
+                                      <table border="2" class="dataframe" width="1200" margin="middle">
+                             
+  
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>部分投资机构(拆)</th>
+      <th>成立年份</th>
+      <th>行业</th>
+      <th>估值（亿人民币）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>红杉资本</td>
+      <td>2014</td>
+      <td>金融科技</td>
+      <td>10140</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>春华资本</td>
+      <td>2014</td>
+      <td>金融科技</td>
+      <td>10000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>中投海外</td>
+      <td>2014</td>
+      <td>金融科技</td>
+      <td>10000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>海纳亚洲</td>
+      <td>2012</td>
+      <td>媒体和娱乐</td>
+      <td>5200</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>启明创投</td>
+      <td>2012</td>
+      <td>媒体和娱乐</td>
+      <td>5070</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>红杉资本</td>
+      <td>2012</td>
+      <td>媒体和娱乐</td>
+      <td>5070</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>纪源资本</td>
+      <td>2012</td>
+      <td>媒体和娱乐</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>阿里巴巴</td>
+      <td>2012</td>
+      <td>共享经济</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>红杉资本</td>
+      <td>2012</td>
+      <td>共享经济</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>腾讯</td>
+      <td>2012</td>
+      <td>共享经济</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>纪源资本</td>
+      <td>2012</td>
+      <td>共享经济</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>经纬中国</td>
+      <td>2012</td>
+      <td>共享经济</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>中银集团</td>
+      <td>2011</td>
+      <td>金融科技</td>
+      <td>2700</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>国泰君安（香港）</td>
+      <td>2011</td>
+      <td>金融科技</td>
+      <td>2700</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>摩根士丹利</td>
+      <td>2011</td>
+      <td>金融科技</td>
+      <td>2700</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>淡马锡</td>
+      <td>2014</td>
+      <td>金融科技</td>
+      <td>1570</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>腾讯</td>
+      <td>2014</td>
+      <td>金融科技</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>华平投资</td>
+      <td>2014</td>
+      <td>金融科技</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>腾讯</td>
+      <td>2011</td>
+      <td>媒体和娱乐</td>
+      <td>1350</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>GIC</td>
+      <td>2013</td>
+      <td>物流</td>
+      <td>1300</td>
+    </tr>
+  </tbody>
+</table>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="content">
+  <div class="container-fluid">
+      <div class="row">
+
+              <div class="card">
+                  <div class="content">
+                      <link rel="stylesheet" href="../static/style.css">
+                      <h4 class="title"><b><i>4.红杉资本对不同行业的投资情况</b></i></h4>
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class="text-primary">
+
+                                      <table border="2" class="dataframe" width="1200" margin="middle">
+                                         
+  <thead>
+    <tr style="text-align: right;">
+      <th>序号</th>
+      <th>投资机构</th>
+      <th>行业</th>
+      <th>企业数量</th>
+      <th>估值（亿人民币）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>红杉资本</td>
+      <td>金融科技</td>
+      <td>6</td>
+      <td>11580</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>红杉资本</td>
+      <td>媒体和娱乐</td>
+      <td>6</td>
+      <td>6870</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>红杉资本</td>
+      <td>共享经济</td>
+      <td>2</td>
+      <td>3800</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>红杉资本</td>
+      <td>物流</td>
+      <td>7</td>
+      <td>1940</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>红杉资本</td>
+      <td>电子商务</td>
+      <td>11</td>
+      <td>1610</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>红杉资本</td>
+      <td>机器人</td>
+      <td>2</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>红杉资本</td>
+      <td>区块链</td>
+      <td>1</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>红杉资本</td>
+      <td>健康科技</td>
+      <td>4</td>
+      <td>640</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>红杉资本</td>
+      <td>人工智能</td>
+      <td>5</td>
+      <td>560</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>红杉资本</td>
+      <td>教育科技</td>
+      <td>2</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>红杉资本</td>
+      <td>软件与服务</td>
+      <td>3</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>红杉资本</td>
+      <td>新能源汽车</td>
+      <td>2</td>
+      <td>370</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>红杉资本</td>
+      <td>房地产科技</td>
+      <td>1</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>红杉资本</td>
+      <td>消费品</td>
+      <td>1</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>红杉资本</td>
+      <td>游戏</td>
+      <td>1</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>红杉资本</td>
+      <td>生命科学</td>
+      <td>1</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>红杉资本</td>
+      <td>新能源</td>
+      <td>1</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>红杉资本</td>
+      <td>新零售</td>
+      <td>1</td>
+      <td>70</td>
+    </tr>
+  </tbody>
+</table>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="http://www.17sucai.com/">Amaze Admin</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+<!--   Core JS Files   -->
+<script src="../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="../assets/vendors/jquery-ui-1.12.0/jquery-ui.js"></script>
+<script src="../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/vendors/material.min.js" type="text/javascript"></script>
+<script src="../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<!-- Forms Validations Plugin -->
+<script src="../assets/vendors/jquery.validate.min.js"></script>
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+<script src="../assets/vendors/moment.min.js"></script>
+<!--  Charts Plugin -->
+<script src="../assets/vendors/chartist.min.js"></script>
+<!--  Plugin for the Wizard -->
+<script src="../assets/vendors/jquery.bootstrap-wizard.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/vendors/bootstrap-notify.js"></script>
+<!-- DateTimePicker Plugin -->
+<script src="../assets/vendors/bootstrap-datetimepicker.js"></script>
+<!-- Vector Map plugin -->
+<script src="../assets/vendors/jquery-jvectormap.js"></script>
+<!-- Sliders Plugin -->
+<script src="../assets/vendors/nouislider.min.js"></script>
+<!-- Select Plugin -->
+<script src="../assets/vendors/jquery.select-bootstrap.js"></script>
+<!--  DataTables.net Plugin    -->
+<script src="../assets/vendors/jquery.datatables.js"></script>
+<!-- Sweet Alert 2 plugin -->
+<script src="../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="../assets/vendors/jasny-bootstrap.min.js"></script>
+<!--  Full Calendar Plugin    -->
+<script src="../assets/vendors/fullcalendar.min.js"></script>
+<!-- TagsInput Plugin -->
+<script src="../assets/vendors/jquery.tagsinput.js"></script>
+<!-- Material Dashboard javascript methods -->
+<script src="../assets/js/amaze.js"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+</body>
+</html>

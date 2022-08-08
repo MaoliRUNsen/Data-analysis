@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/style.css" />
+	<link rel="stylesheet" href="static/css/iconfont.css" />
+    <title>首页</title>
+</head>
+<body>
+<div id="bigBon">
+	<div>
+		<h1>本flask网站为中国高校及专业的数据分析成果展示网站</h1>
+	</div>
+	<div>
+		<p>以下为数据分析的所有结果展示，点击按钮可查看对应的数据和交互式可视化图表哦！</p>
+		<form action="/province_school_counts" methods=['GET']>	
+			<button class="loginButton" type="SUBMIT">各省份高校数量分布情况</button>
+		</form>
+		<form action="/ben_zhuang">
+			<button class="zhuceButton">本科、专科占比情况</button>
+		</form>
+		<form action="banxueleibie">
+			<button class="loginButton">各办学类别占比情况</button>
+		</form>
+		<form action="/zhongdianyuanxiaosl">
+			<button class="zhuceButton">重点院校数量对比</button>
+		</form>
+		<form action="/zhongdianyuanxiaofb">
+			<button class="loginButton">重点院校分布情况</button>
+		</form>
+		<form action="/zhuanye_top20">
+			<button class="zhuceButton">开设数量前二十的专业</button>
+		</form>
+		<form action="/tesezhuanye">
+			<button class="loginButton">国家特色专业分布情况</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

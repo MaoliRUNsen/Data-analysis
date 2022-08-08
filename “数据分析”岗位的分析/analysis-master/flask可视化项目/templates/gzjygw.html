@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>python 数据分析项目</title>
+    <style>
+      body{text-align:center}
+      form{
+        float:left;
+      }
+
+    </style>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/ie10-viewport-bug-workaround.css" rel="stylesheet">
+      <link href="/static/starter-template.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+ <body >
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <h1><a class="navbar-brand" href="http://127.0.0.1:5000/zhanshi">点击返回</a></h1>
+
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron masthead">
+  <div class="container" style="width:100%;text-align:center">
+      <br />
+      <br />
+    <h2>不同工作经验的岗位情况</h2>
+      <br />
+      <h4>我们发现，市场上对于工作经验的要求还是很强烈的。
+1-5年的经验要求占绝大多数。
+而应届生和10年以上的需求则非常少。
+工作经验是入职成功与否的关键因素。</h4>
+
+  </div>
+</div>
+<div style="width:100%;text-align:center" >
+<form method="POST" action="/gzjygw" >
+    <table bgcolor="#dcdcdc" >
+
+    </table>
+</form>
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+ {{ the_res|safe }}
+ </body>
+</html>

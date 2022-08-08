@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Shortcut Icon" href="static/images/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <title>{{the_title}}</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body background="static/images/img.jpg">
+
+<h1>电影数据分析网站</h1>
+
+<h2>原始表格：</h2>
+{{ the_data|safe }}
+
+<div id="main" style="width:1042px;">
+
+<div id="first" style="width:25%;float:left;"><form name="form1" method="get" action="/get_data_category"><input type="submit" name="button" id="button" value="畅销分类" /></form></div>
+<div id="second" style="width:25%;float:left;"><form name="form1" method="get" action="/get_data_goods"><input type="submit" name="button" id="button" value="畅销商品" /></form></div>
+<div id="third" style="width:25%;float:left;"><form name="form1" method="get" action="/get_sales"><input type="submit" name="button" id="button" value="销售额占比" /></form></div>
+
+</div>
+
+</body>
+</html>
